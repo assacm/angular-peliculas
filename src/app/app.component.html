@@ -1,11 +1,12 @@
-<input type="file" style = "display:none;" #cargadorArchivos>
-<button (click)="cargadorArchivos.click()">Cargar archivos</button>
+<app-menu></app-menu>
 
+<div class="contenedor">
 
-<h2>En Cines</h2>
+  <h2>En Cines</h2>
 
-<app-listado-peliculas [peliculas] ="peliculasEnCine" ></app-listado-peliculas>
+  <app-listado-peliculas [peliculas] ="peliculasEnCine" ></app-listado-peliculas>
 
-<h2>Proximos estrenos</h2>
+  <h2>Proximos estrenos</h2>
 
-<app-listado-peliculas [peliculas] ="peliculasProximosEstrenos" ></app-listado-peliculas>
+  <app-listado-peliculas [peliculas] ="peliculasProximosEstrenos" ></app-listado-peliculas>
+</div>
