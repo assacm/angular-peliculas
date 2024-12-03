@@ -17,23 +17,9 @@ export class ListadoPeliculasComponent{
   @Input({required:true})
   peliculas! :any[];
 
-  AgregarPelicula(){
-    this.peliculas.push({
-      titulo:'Inception',
-      fechaLanzamiento: new Date('2012-07-03'),
-      precio:560
-    })
-
-  }
-
-  remover(pelicula:any){
-    const indice = this.peliculas.findIndex((peliculaActual:any)=> peliculaActual.titulo == pelicula.titulo);
-    this.peliculas.splice(indice,1);
-
-  }
 
   procesarVoto(voto:number){
-    alert(`Calificación orotgada: ${voto}`);
+    //alert(`Calificación orotgada: ${voto}`);
 
   }
 
